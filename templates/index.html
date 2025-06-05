@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BellyBox - Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="bg-video">
+        <source src="{{ url_for('static', filename='images/landbg.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay Content -->
+    <div class="overlay">
+        <div class="content-box">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="BellyBox Logo" class="logo">
+            <h1 class="site-title">Welcome to BellyBox</h1>
+            <p class="welcome-msg">Delicious food made with love, delivered to your doorstep!</p>
+            <a href="{{ url_for('login') }}" class="get-in-btn">Get In</a>
+        </div>
+    </div>
+</body>
+</html>

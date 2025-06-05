@@ -1,0 +1,92 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+}
+
+/* Background Image */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/register_bg.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Register Form Container */
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 5% auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Logo and Heading */
+.logo-box img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+.logo-box h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+input {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+input::placeholder {
+    color: #ddd;
+}
+
+/* Button */
+button {
+    width: 90%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 30px;
+    background: #ff6347;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+button:hover {
+    background: #e5533d;
+}
+
+/* Link to login */
+.login-link {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+.login-link a {
+    color: #ff6347;
+    text-decoration: none;
+}
+.login-link a:hover {
+    text-decoration: underline;
+}
